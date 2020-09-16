@@ -10,7 +10,7 @@ void deposit(float i){
 }
 
 void withdraw(float j){
-    if(balance > j)
+    if(balance >= j)
     {
         balance = balance - j;
     }
