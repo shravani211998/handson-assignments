@@ -10,7 +10,14 @@ void deposit(float i){
 }
 
 void withdraw(float j){
-    balance = balance - j;
+    if(balance > j)
+    {
+        balance = balance - j;
+    }
+    else{
+        System.out.println("Not sufficient balance");
+    }
+    
 
 }
 
